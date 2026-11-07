@@ -1,0 +1,3 @@
+include platform.resolute
+
+micalet-base: desktop-common

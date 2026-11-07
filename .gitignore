@@ -19,3 +19,4 @@ build/
 *.swp
 *~
 __pycache__/
+/update.cfg

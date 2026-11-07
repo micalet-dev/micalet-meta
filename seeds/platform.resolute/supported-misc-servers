@@ -1,0 +1,284 @@
+= Servers and Daemons =
+
+Database:
+
+ * postgresql-plperl-*
+ * postgresql-plpython3-*
+ * postgresql-pltcl-*
+
+ # the mysql-server is also seeded via lamp-server task
+ * mysql-server
+ * mysql-client
+
+ * mariadb-server
+ * mariadb-client
+
+ * valkey-server
+ * valkey-sentinel
+
+Email:
+
+ * fetchmail
+ * procmail
+ * exim4
+ * exim4-daemon-heavy
+ * exim4-daemon-light
+ * exim4-doc-html
+ * dovecot-core
+ * postfix
+ * postfix-cdb
+ * postfix-doc
+ * postfix-ldap
+ * postfix-mysql
+ * postfix-pcre
+ * postfix-pgsql
+ * amavisd-new
+ * spamassassin
+
+Must also consider webmail and so on...
+
+VPN:
+
+ * strongswan # ipsec vpn - jpds/14.04 (LP: #1266066)
+ * openvpn
+ * wireguard-tools # (MIR LP: #1950317)
+
+Web servers:
+
+ * nginx
+ * libapache2-mod-auth-pgsql # not in lamp task, but relevant
+ * libapache2-mod-auth-plain # not in lamp task, but relevant
+ * libapache2-mod-perl2      # not in lamp task, might consider demotion for 22.04?
+ * libapache2-mod-php
+
+Web applications:
+
+ * memcached #ClintByrum - server-maverick-uds-web20-workloads
+ * libmemcached-dev #ClintByrum - server-maverick-uds-web20-workloads
+ * rabbitmq-server
+ * php
+ * php-pear
+ * php-cgi
+ * php-cli
+ * php-curl
+ * php-gd
+ * php-gmp
+ * php-ldap
+ * php-mysql
+ * php-odbc
+ * php-pgsql
+ * php-pspell
+ * php-snmp
+ * php-sqlite3
+ * php-tidy
+ * php-xml
+
+Proxy:
+
+ * squid   # (LP: #885283) and (LP: #1780944)
+
+Utilities:
+
+ * gpsd    # optional to enhance chrony with HW based time data
+ * htop    # used quite often in favor of top
+ * logcheck		  # great security tool for any server
+ * logcheck-database	  # useful for above
+ * rrdtool
+ * iotop-c
+ * john
+ * libmemcached-tools #ClintByrum - server-maverick-uds-web20-workloads
+ * nut # UPS management
+ * nut-cgi
+ * nut-snmp
+ * ndctl   # for management of nvdimm devices (LP: #1853506)
+ * prips  # LP: #1930207; needed for Google images.
+ * snmp
+ * snmpd
+
+Radius server:
+
+ * freeradius
+
+Authentication:
+
+ * sssd
+ * sssd-tools
+ * adcli
+ * realmd
+ * slapd
+ * ldap-utils
+ * libpam-krb5
+ * libpam-mount
+ * libpam-p11
+ * python3-aws-requests-auth  # LP: #1915445; needed for Google images.
+
+Backup:
+
+ * mtx
+
+High Availability:
+
+ * haproxy #ClintByrum server-maverick-uds-cloud-loadbalancing
+ * ipvsadm
+ * keepalived
+ * pacemaker
+ * multipath-tools-boot
+ * nbd-server
+ * nbd-client
+ * drbd-utils
+
+Configuration Management:
+
+ * etckeeper
+
+Other:
+
+ * anope  # requested by Canonical IS (LP: #1459692)
+ * rabbitmq-server
+ * unzip
+ * containerd # for OCF support (LP: #1819761)
+ * containerd-stable # Stable version of containerd (LP: #2121802)
+ * runc # for OCF support (LP: #1817336)
+ * runc-stable # Stable version of runc (LP: #2121802)
+ * clamav
+ * clamav-daemon
+
+FTP:
+
+ * vsftpd
+ * tftpd-hpa
+ * tftp-hpa
+ * lftp
+
+Networking:
+
+ * kea
+ * radvd
+
+ * openvswitch-switch
+ * openvswitch-switch-dpdk
+
+KVM Virtualization Stack:
+# held via virt-host tasks before
+# Due to the Provides/Depends of -hwe components on the base ones
+# we need to:
+#  1) explicitly list all -hwe components
+#  2) explicitly list base components that might be removed because of
+#     Provides by -hwe components
+
+ * qemu-system-x86 [i386 amd64]
+ * qemu-system-x86-hwe [i386 amd64]
+ * qemu-system-ppc [powerpc ppc64el]
+ * qemu-system-ppc-hwe [powerpc ppc64el]
+ * qemu-system-aarch64 [arm64]
+ * qemu-system-aarch64-hwe [arm64]
+ * qemu-system-s390x [s390x]
+ * qemu-system-s390x-hwe [s390x]
+ * libvirt-daemon-system
+ * libvirt-daemon-system-hwe
+ * libvirt-clients
+ * libvirt-clients-hwe
+ * python3-libvirt
+
+ * libvirt-common
+ * libvirt-common-hwe
+ * libvirt-daemon
+ * libvirt-daemon-hwe
+ * libvirt-daemon-common
+ * libvirt-daemon-common-hwe
+ * libvirt-daemon-config-network
+ * libvirt-daemon-config-network-hwe
+ * libvirt-daemon-config-nwfilter
+ * libvirt-daemon-config-nwfilter-hwe
+ * libvirt-daemon-driver-interface
+ * libvirt-daemon-driver-interface-hwe
+ * libvirt-daemon-driver-network
+ * libvirt-daemon-driver-network-hwe
+ * libvirt-daemon-driver-nodedev
+ * libvirt-daemon-driver-nodedev-hwe
+ * libvirt-daemon-driver-nwfilter
+ * libvirt-daemon-driver-nwfilter-hwe
+ * libvirt-daemon-driver-qemu
+ * libvirt-daemon-driver-qemu-hwe
+ * libvirt-daemon-driver-secret
+ * libvirt-daemon-driver-secret-hwe
+ * libvirt-daemon-driver-storage
+ * libvirt-daemon-driver-storage-hwe
+ * libvirt-daemon-driver-storage-disk
+ * libvirt-daemon-driver-storage-disk-hwe
+ * libvirt-daemon-driver-storage-iscsi
+ * libvirt-daemon-driver-storage-iscsi-hwe
+ * libvirt-daemon-driver-storage-logical
+ * libvirt-daemon-driver-storage-logical-hwe
+ * libvirt-daemon-driver-storage-mpath
+ * libvirt-daemon-driver-storage-mpath-hwe
+ * libvirt-daemon-driver-storage-scsi
+ * libvirt-daemon-driver-storage-scsi-hwe
+ * libvirt-daemon-lock
+ * libvirt-daemon-lock-hwe
+ * libvirt-daemon-log
+ * libvirt-daemon-log-hwe
+ * libvirt-daemon-plugin-lockd
+ * libvirt-daemon-plugin-lockd-hwe
+ * libvirt-l10n
+ * libvirt-l10n-hwe
+ * ovmf
+ * ovmf-hwe
+ * ovmf-amdsev
+ * ovmf-amdsev-hwe
+ * ovmf-generic
+ * ovmf-generic-hwe
+ * ovmf-inteltdx
+ * ovmf-inteltdx-hwe
+ * qemu-block-extra
+ * qemu-block-extra-hwe
+ * qemu-system-data
+ * qemu-system-data-hwe
+ * qemu-system-gui
+ * qemu-system-gui-hwe
+ * qemu-system-modules-opengl
+ * qemu-system-modules-opengl-hwe
+ * qemu-system-modules-spice
+ * qemu-system-modules-spice-hwe
+ * qemu-utils
+ * qemu-utils-hwe
+ * seabios
+ * seabios-hwe
+
+ # only in -hwe
+ * ubuntu-helper-virt-hwe
+
+Other Virtualization:
+
+ * open-vm-tools
+
+Cloud:
+
+ * cloud-utils
+
+IPv6 tools:
+
+ * frr                 # MIR LP: #1951834, replaces quagga
+
+Language Interpreters:
+
+ * ruby
+
+Python transitional symlinks:
+
+ * python-dev-is-python3
+ * python-is-python3
+
+ppp stack:
+
+# This stack is no more very relevant, but was in the early days of internet
+# dialin. This stack is a candidate for demotion, but OTOH received no
+# bugs/CVEs over the last years and therefore can stay as-is for now.
+# ppp itself is still recommended by network-manager and thereby has quite
+# an install base.
+
+ * pptpd
+ * pptp-linux
+ * libatm1
+ * ppp
+ * pppconfig
