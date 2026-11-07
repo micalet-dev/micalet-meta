@@ -1,0 +1,2 @@
+# No distribuir la còpia de les seeds upstream de Ubuntu Platform.
+tar-ignore = seeds/platform.resolute

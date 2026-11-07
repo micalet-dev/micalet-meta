@@ -5,23 +5,11 @@ Files: *
 Copyright: 2026, Marcos Comeche <mcomeche9@gmail.com>
 License: GPL-3+
 
-Files: seeds/platform.resolute/*
-Copyright: Various contributors; see the upstream Git history.
-License: UNKNOWN
- The licensing terms of these files, copied from the Ubuntu Platform
- seed repository, have not yet been verified. This entry does not grant
- permission to redistribute or modify them. Verify the upstream license
- before publishing this source package.
-
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  .
- On Debian systems, the complete text of version 3 of the GNU General
- Public License can be found in /usr/share/common-licenses/GPL-3.
-
-License: UNKNOWN
- The upstream license has not yet been identified. This is a placeholder
- to record the unresolved licensing status, not a license grant.
+ On Debian systems, the complete text of the GNU General Public License
+ version 3 can be found in /usr/share/common-licenses/GPL-3.
