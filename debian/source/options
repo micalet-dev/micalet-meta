@@ -3,3 +3,6 @@ tar-ignore = seeds/platform.resolute
 
 # Exclou els resultats intermedis de Germinate.
 tar-ignore = build/germinate
+
+# Exclou fitxers locals i dades intermèdies.
+tar-ignore = update.cfg
