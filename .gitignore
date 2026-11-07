@@ -1,0 +1,21 @@
+# Paquets compilats
+*.deb
+*.changes
+*.buildinfo
+*.dsc
+*.build
+
+# Debhelper
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/tmp/
+
+# Germinate
+build/
+
+# Temporals
+*.log
+*.swp
+*~
+__pycache__/
