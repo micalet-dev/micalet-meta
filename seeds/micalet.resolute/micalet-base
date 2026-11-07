@@ -8,7 +8,7 @@ Task-Metapackage: micalet-base
 
  * !%snapd
  * !plasma-discover-backend-snap
-
+ * !budgie-sddm-theme
 # ==================================================
 # KDE PLASMA
 # ==================================================
@@ -30,6 +30,7 @@ Task-Metapackage: micalet-base
 # ==================================================
 
  * sddm
+ * sddm-theme-breeze
 
 # ==================================================
 # CONFIGURACIO DE PLASMA

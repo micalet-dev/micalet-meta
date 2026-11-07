@@ -1,0 +1,24 @@
+#!/bin/sh
+set -eu
+
+cd "$(dirname "$0")"
+ROOT="$(pwd -P)"
+
+cat > update.cfg <<CONFIG
+[DEFAULT]
+dist: resolute
+
+[resolute]
+seeds: micalet-base
+architectures: amd64
+
+seed_base: file://${ROOT}/seeds/
+seed_dist: micalet.resolute
+
+archive_base/default: https://archive.ubuntu.com/ubuntu/ https://security.ubuntu.com/ubuntu/
+
+dists: resolute resolute-updates resolute-security
+components: main restricted universe multiverse
+CONFIG
+
+germinate-update-metapackage resolute

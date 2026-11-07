@@ -1,0 +1,20 @@
+Source: micalet-meta
+Section: metapackages
+Priority: optional
+Maintainer: Marcos Comeche <mcomeche9@gmail.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ germinate (>= 1.18)
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+
+Package: micalet-base
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet Base desktop metapackage
+ Metapackage that installs the base Micalet desktop environment,
+ including KDE Plasma and the selected system components.
