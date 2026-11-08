@@ -21,7 +21,3 @@ Metapaquets oficials de la distribució Micalet.
 
 - main: versió estable.
 - daily: desenvolupament.
-
-## Mantenidor
-
-Marcos Comeche <mcomeche9@gmail.com>
