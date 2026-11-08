@@ -1,3 +1,11 @@
+micalet-meta (0.2) resolute; urgency=medium
+
+  * Refreshed dependencies
+  * Added language-pack-ca to micalet-base
+  * Added language-pack-es to micalet-base
+
+ -- Marcos Comeche <mcomeche9@gmail.com>  Sun, 08 Nov 2026 09:57:16 +0100
+
 micalet-meta (0.1) resolute; urgency=medium
 
   * Initial Micalet Base metapackage.

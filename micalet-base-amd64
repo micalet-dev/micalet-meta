@@ -5,6 +5,8 @@ kio-extras
 konsole
 kwin-wayland
 kwin-x11
+language-pack-ca
+language-pack-es
 network-manager
 pipewire-alsa
 pipewire-pulse

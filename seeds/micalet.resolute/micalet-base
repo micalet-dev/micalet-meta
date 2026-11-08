@@ -65,3 +65,7 @@ Task-Metapackage: micalet-base
  * pipewire-pulse
  * pipewire-alsa
  * wireplumber
+
+ * language-pack-ca
+
+ * language-pack-es
