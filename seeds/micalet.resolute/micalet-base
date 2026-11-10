@@ -2,70 +2,19 @@ Task-Name: micalet-base
 Task-Description: Micalet Base
 Task-Metapackage: micalet-base
 
-# ==================================================
-# EXCLUSIONS
-# ==================================================
-
+# Exclusions de la distribució
  * !%snapd
  * !plasma-discover-backend-snap
  * !budgie-sddm-theme
-# ==================================================
-# KDE PLASMA
-# ==================================================
 
- * plasma-desktop
- * plasma-workspace
- * plasma-session-wayland
- * plasma-session-x11
-
-# ==================================================
-# GESTOR DE FINESTRES
-# ==================================================
-
- * kwin-wayland
- * kwin-x11
-
-# ==================================================
-# GESTOR DE SESSIONS
-# ==================================================
-
- * sddm
- * sddm-theme-breeze
-
-# ==================================================
-# CONFIGURACIO DE PLASMA
-# ==================================================
-
- * systemsettings
- * powerdevil
- * plasma-systemmonitor
- * plasma-nm
- * plasma-pa
-
-# ==================================================
-# APLICACIONS KDE
-# ==================================================
-
- * dolphin
- * konsole
- * ark
- * kate
- * kio-extras
-
-# ==================================================
-# XARXA
-# ==================================================
-
- * network-manager
-
-# ==================================================
-# AUDIO
-# ==================================================
-
- * pipewire-pulse
- * pipewire-alsa
- * wireplumber
-
+# Idiomes
  * language-pack-ca
-
  * language-pack-es
+
+# Xarxa i àudio
+ * network-manager
+ * pipewire-audio
+
+# Branding de Micalet
+ * micalet-grub-theme
+ * micalet-plymouth-theme

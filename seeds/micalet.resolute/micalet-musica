@@ -1,0 +1,16 @@
+Task-Name: micalet-musica
+Task-Description: Micalet Música
+Task-Metapackage: micalet-musica
+
+# Creació, enregistrament i producció musical
+ * lmms
+ * ardour
+ * hydrogen
+ * mixxx
+ * qtractor
+ * minuet
+ * carla
+ * qsynth
+ * rosegarden
+ * frescobaldi
+ * lilypond

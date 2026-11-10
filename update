@@ -9,13 +9,13 @@ cat > update.cfg <<CONFIG
 dist: resolute
 
 [resolute]
-seeds: micalet-base
+seeds: micalet-base micalet-kde micalet-lxqt micalet-common-apps micalet-escriptori micalet-edu micalet-musica micalet-infantil
 architectures: amd64
 
 seed_base: file://${ROOT}/seeds/
 seed_dist: micalet.resolute
 
-archive_base/default: https://archive.ubuntu.com/ubuntu/ https://security.ubuntu.com/ubuntu/
+archive_base/default: https://archive.ubuntu.com/ubuntu/ https://security.ubuntu.com/ubuntu/ https://ppa.launchpadcontent.net/micalet-dev/micalet-daily/ubuntu/
 
 dists: resolute resolute-updates resolute-security
 components: main restricted universe multiverse

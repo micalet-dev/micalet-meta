@@ -1,7 +1,7 @@
 Source: micalet-meta
 Section: metapackages
 Priority: optional
-Maintainer: Marcos Comeche <mcomeche9@gmail.com>
+Maintainer: Marcos <mcomechem@micalet.net>
 Build-Depends:
  debhelper-compat (= 13),
  germinate (>= 1.18)
@@ -18,3 +18,73 @@ Recommends:
 Description: Micalet Base desktop metapackage
  Metapackage that installs the base Micalet desktop environment,
  including KDE Plasma and the selected system components.
+
+Package: micalet-kde
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet KDE desktop metapackage
+ Metapackage for the Micalet KDE Plasma edition.
+
+Package: micalet-lxqt
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet LXQt desktop metapackage
+ Metapackage for the lightweight Micalet LXQt edition.
+
+Package: micalet-common-apps
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet common applications metapackage
+ Shared applications for Micalet editions.
+
+Package: micalet-escriptori
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet Escriptori metapackage
+ General-purpose desktop applications for Micalet.
+
+Package: micalet-edu
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet Edu metapackage
+ Educational applications for Micalet.
+
+Package: micalet-musica
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet Musica metapackage
+ Music production and audio applications for Micalet.
+
+Package: micalet-infantil
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${germinate:Depends}
+Recommends:
+ ${germinate:Recommends}
+Description: Micalet Infantil metapackage
+ Child-friendly applications for Micalet.

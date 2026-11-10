@@ -1,0 +1,11 @@
+Task-Name: micalet-infantil
+Task-Description: Micalet Infantil
+Task-Metapackage: micalet-infantil
+
+# Aprenentatge, creativitat i jocs infantils
+ * gcompris-qt
+ * tuxpaint
+ * tuxpaint-stamps-default
+ * tuxmath
+ * tuxtype
+ * ri-li

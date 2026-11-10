@@ -1,0 +1,43 @@
+Task-Name: micalet-escriptori
+Task-Description: Micalet Escriptori
+Task-Metapackage: micalet-escriptori
+
+# Ofimàtica
+ * libreoffice
+ * libreoffice-l10n-ca
+ * libreoffice-l10n-es
+
+# Correcció i suport lingüístic
+ * hunspell-ca
+ * hunspell-es
+ * hyphen-ca
+ * hyphen-es
+
+# Disseny, imatge i publicació
+ * gimp
+ * krita
+ * darktable
+ * inkscape
+ * scribus
+ * dia
+ * librecad
+
+# Documents i PDF
+ * calibre
+ * pdfarranger
+
+# Internet, xarxa i correu
+ * filezilla
+ * transmission-qt
+ * remmina
+ * claws-mail
+
+# Àudio, vídeo i captura
+ * audacity
+ * imagination
+ * kazam
+ * kdenlive
+ * handbrake
+
+# Seguretat personal
+ * keepassxc-full

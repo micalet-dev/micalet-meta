@@ -1,0 +1,18 @@
+Task-Name: micalet-lxqt
+Task-Description: Micalet LXQt
+Task-Metapackage: micalet-lxqt
+
+# Nucli de l'escriptori LXQt
+ * lxqt-core
+ * lxqt-admin
+ * lxqt-archiver
+ * lximage-qt
+ * lxqt-powermanagement
+
+# Aplicacions lleugeres i utilitats
+ * sddm
+ * openbox
+ * featherpad
+ * pavucontrol-qt
+ * screengrab
+ * qpdfview

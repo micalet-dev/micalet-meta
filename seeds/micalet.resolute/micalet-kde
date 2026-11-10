@@ -1,0 +1,40 @@
+Task-Name: micalet-kde
+Task-Description: Micalet KDE
+Task-Metapackage: micalet-kde
+
+# Plasma i sessions gràfiques
+ * plasma-desktop
+ * plasma-session-wayland
+ * plasma-session-x11
+
+# Gestor de sessions i tema
+ * sddm
+ * sddm-theme-breeze
+
+# Configuració i integració de Plasma
+ * systemsettings
+ * powerdevil
+ * plasma-systemmonitor
+ * plasma-nm
+ * plasma-pa
+
+# Aplicacions KDE
+ * dolphin
+ * konsole
+ * ark
+ * kate
+ * kio-extras
+ * gwenview
+ * okular
+ * spectacle
+ * kcalc
+ * kdeconnect
+ * plasma-discover
+ * k3b
+ * kamoso
+ * skanlite
+ * libreoffice-kf6
+
+# kwin-x11 es declara expressament perquè plasma-session-x11 el recomana,
+# però no el necessita com a dependència obligatòria.
+ * kwin-x11

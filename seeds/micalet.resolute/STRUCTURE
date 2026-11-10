@@ -1,3 +1,10 @@
 include platform.resolute
 
 micalet-base: desktop-common
+micalet-kde: micalet-base
+micalet-lxqt: micalet-base
+micalet-common-apps: micalet-base
+micalet-escriptori: micalet-common-apps
+micalet-edu: micalet-escriptori
+micalet-musica: micalet-escriptori
+micalet-infantil: micalet-escriptori

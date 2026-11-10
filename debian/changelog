@@ -1,3 +1,9 @@
+micalet-meta (0.3) resolute; urgency=medium
+
+  * Added packages, restructured seeds.
+
+ -- Marcos <mcomechem@micalet.net>  Tue, 10 Nov 2026 15:56:33 +0100
+
 micalet-meta (0.2) resolute; urgency=medium
 
   * Refreshed dependencies

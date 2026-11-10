@@ -1,0 +1,7 @@
+Task-Name: micalet-common-apps
+Task-Description: Micalet Common Apps
+Task-Metapackage: micalet-common-apps
+
+ * firefox
+ * vlc
+ * gparted

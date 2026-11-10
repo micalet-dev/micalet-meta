@@ -1,0 +1,15 @@
+Task-Name: micalet-edu
+Task-Description: Micalet Edu
+Task-Metapackage: micalet-edu
+
+# Aplicacions educatives KDE i multiplataforma
+ * kdeedu
+ * gcompris-qt
+ * stellarium
+ * tuxmath
+ * tuxtype
+ * geogebra
+ * avogadro
+ * xaos
+ * laby
+ * jclic
